@@ -9,9 +9,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 
 <style>
-  img {
-    border-radius: 50%;
-  }
+@media (min-width: 768px) {
+
+}
+
+.container-1{
+  display: flex;
+  align-items: center;
+}
+
+.container-1 div{
+  border:8px #ccc solid; padding:40px;
+}
+.div1{
+  flex:3;
+  order:1;
+}
+.div2{
+  flex:1;
+  order:2;
+}
+.div3{
+  flex:1;
+  order:3;
+}
+
 body {
   background-color: coral;
 }
@@ -38,27 +60,9 @@ p {}
   border: 3px solid #73AD21;
   padding: 10px;
 }
-.div1 {
-  padding: 10px;
-  border: 3px solid #73AD21;
-}
 
-.div2 {
-  padding: 10px;
-  border: 3px solid red;
-}
 
-.div3 {
-  float: left;
-  padding: 10px;
-  border: 3px solid #73AD21;
-}
 
-.div4 {
-  padding: 10px;
-  border: 3px solid red;
-  clear: left;
-}
 .container{  background-image: url('images/true-crime1.jpg');
     background-repeat: no-repeat;}
     form {font-family: 'Syne Mono', monospace;}
@@ -70,8 +74,8 @@ p {}
 <html>
 <body>
 
-<div class="container">
 
+<div class="container">
 
 
 
@@ -85,19 +89,22 @@ p {}
 <h3><section><b>Lead Investigator</b></section></h3>
 <p><b> D. Ambers </b></p>
 
-<h2>Houston Office</h2>
+<div class="container-1">
 <div class="div1">Contact Information</div>
 <div class="div4">Office 1  </div>
-<br><br>
+<h2>Houston Office</h2>
 
-<h2>Baton Rouge Office</h2>
+
+
 <div class="div2">Contact Information</div>
 <div class="div4">Office 2 </div>
+<h2>Baton Rouge Office</h2>
 
 
-<h2>Possible Clients</h2>
 
 <form>
+
+  <h2><c>Possible Clients</c></h2>
 
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
