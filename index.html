@@ -1,152 +1,146 @@
 <html>
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
-
 <style>
-@media (min-width: 768px) {
+
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
 
 }
 
-.container-1{
-  display: flex;
-  align-items: center;
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 }
 
-.container-1 div{
-  border:8px #ccc solid; padding:40px;
-}
-.div1{
-  flex:3;
-  order:1;
-}
-.div2{
-  flex:1;
-  order:2;
-}
-.div3{
-  flex:1;
-  order:3;
-}
 
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
 body {
   background-color: coral;
 }
 
-h2 {text-align: center;}
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-p {}
-
-  aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
+columns1 {
+  columns: 100px 3;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: MediumSeaGreen;
 }
 
-.right {
-  position: absolute;
-  right: 0px;
-  width: 300px;
-  border: 3px solid #73AD21;
-  padding: 10px;
+.flex-container > div {
+  background-color: #f1f1f1;
+ width: 100px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 40px;
+  grid-column-gap: 10px;
+  background-color: #2196F3;
+  padding: 30px;
+}
 
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: #ff0000;
+}
 
-.container{  background-image: url('images/true-crime1.jpg');
-    background-repeat: no-repeat;}
-    form {font-family: 'Syne Mono', monospace;}
-    body {font-family: 'Syne Mono', monospace;}
 
 
 </style>
 </head>
-<html>
 <body>
 
+  <div class="colunms1">
+    <div class="flex-container">
+      <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
 
-<div class="container">
+      </div>
+      </div>
+<footer></footer>
 
+</div>
 
-
-
-
-<h2 style="background-color:Tomato;"><strong>Note Worthy Motto "Test"<p>Note Worthy &#9824;</p></strong></h2>
-</head>
-<p><b>TEST!!!!!!!!!!!!!!!!!!!!!!!!!<br>
-</b></p>
-
-<h3><section><b>Lead Investigator</b></section></h3>
-<p><b> D. Ambers </b></p>
-
-<div class="container-1">
-<div class="div1">Contact Information</div>
-<div class="div4">Office 1  </div>
-<h2>Houston Office</h2>
-
-
-
-<div class="div2">Contact Information</div>
-<div class="div4">Office 2 </div>
-<h2>Baton Rouge Office</h2>
-
-
-
-<form>
-
-  <h2><c>Possible Clients</c></h2>
-
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
-
-  <label for="Contact Information">Contact Information:</label><br>
-  <input type="number" id="Contact Information" name="Contact Information" value="000">
-
-
-<h2>Reseason why you need our services:</h2>
-
-<p>Please pick the choice that closely mirrors your reseasoning:</p>
-
-
-
-  <input type="radio" id="Law office" name="fav_language" value="HTML">
-  <label for="Law office">Law office</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="Private/family issues">Private/family issues</label><br>
-  <input type="radio" id="Research" name="fav_language" value="JavaScript">
-  <label for="Research">Research</label><br>
-
-
-</form>
-
-<p>Your best point of contact please! We will get back to you as soon as possible. Thank you for your time.</p>
+<h3><center><b>Lead Investigator</b></center></h3>
+<p><center><b> D. Ambers </b></center></p>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/LmllfS6U-6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
-<div class="right">
-  <aside><p><b>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</b></p></aside>
 
-  <h2><img src="images/detective1.jpg" alt="Paris" width="300" height="300"</h2>
+
+  <div class= "flex-container">
+    <div class= "columns2">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+
+
+</div>
+</div>
+<div class="right">
+  <footer>
+
+
+  <h2><center><img src="images/detective1.jpg" alt="Paris" width="300" height="300"<?center></h2>
+    <h1>The Role of a Private Investigator</h1>
+    <p>The column-rule-color property sets the color of the rule between the columns of the element:</p>
+
+    <div class="newspaper">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+
+
+
+
   <b>Author: Demetris Ambers</b>
   <h3><b><a href="demetris.ambers@outlook.com">demetris.ambers@outlook.com</a></b></h3>
-
-</div>
-
-
-<footer>
-
 </footer>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
